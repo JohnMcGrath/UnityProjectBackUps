@@ -27,7 +27,15 @@ public class CSVHandler : MonoBehaviour
         Load(file);
 
         imagePanalText = (Texture2D)Resources.Load("dttImages/dttimg" + questionString);
-        imagePanel.GetComponent<Renderer>().material.mainTexture = imagePanalText;
+        if (imagePanalText != null)
+        {
+            imagePanel.GetComponent<Renderer>().material.mainTexture = imagePanalText;
+        }
+
+        else
+        {
+            imagePanel.SetActive(false);
+        }
 
         correctAnswer = Find_id(questionString).correctAnswer;
         // Debug.Log(Find_id(tempString).question);
