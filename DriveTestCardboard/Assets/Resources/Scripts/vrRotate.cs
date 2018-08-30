@@ -4,17 +4,8 @@ using UnityEngine;
 
 public class vrRotate : MonoBehaviour {
 
+    //Angle at which person is rotated
     public float angleOfRotation = 45;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
    public void RotateLeft()
     {

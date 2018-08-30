@@ -54,8 +54,7 @@
      <Compile Include="Assets\Resources\Scripts\ansScript.cs" />
      <Compile Include="Assets\Resources\Scripts\ChangeColour.cs" />
      <Compile Include="Assets\Resources\Scripts\CSVHandler.cs" />
-     <Compile Include="Assets\Resources\Scripts\tempScriptPLEASEDELETE.cs" />
-     <Compile Include="Assets\Resources\Scripts\testScript2.cs" />
+     <Compile Include="Assets\Resources\Scripts\TextHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\vrRotate.cs" />
      <Compile Include="Assets\Resources\Scripts\vrWalking.cs" />
      <Compile Include="Assets\StoreAssets\CSV2Table\Demo\C2TDemo.cs" />

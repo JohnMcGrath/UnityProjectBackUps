@@ -2,19 +2,22 @@
 using System.Collections;
 
 [RequireComponent(typeof(TextMesh))]
-public class testScript2 : MonoBehaviour
+public class TextHandler : MonoBehaviour
 {
     TextMesh TheMesh;
     public string UnwrappedText;
+
+    //Set how long a string can be
     public float MaxWidth;
     public bool NeedsLayout = true;
     public bool ConvertNewLines = false;
 
-    //public GameObject textBox;
-
     void Start()
     {
+        //Create a mesh
         TheMesh = GetComponent<TextMesh>();
+
+        //If the box is ticked, convert chars to new lines
         if (ConvertNewLines)
             UnwrappedText = UnwrappedText.Replace("\\n", System.Environment.NewLine);
     }
@@ -61,8 +64,10 @@ public class testScript2 : MonoBehaviour
     {
         UnwrappedText = gameObject.GetComponent<TextMesh>().text;
 
+        //If no update is needed, return
         if (!NeedsLayout)
             return;
+
         NeedsLayout = false;
         if (MaxWidth == 0)
         {
